@@ -1,2 +1,4 @@
 Colors/config.json
 RunKeyboardLayout.bat
+KeyboardLayout/layout_venv/*
+*.pyc
