@@ -6,8 +6,8 @@ rem cd ..\
 
 python -m venv layout_venv
 
-@echo 'Python Virtual Environments created successfully, next step: installing dependencies'
-@echo 'Next step: installing dependencies'
+@echo Python Virtual Environments created successfully, next step: installing dependencies
+@echo Next step: installing dependencies
 
 call .\layout_venv\Scripts\activate.bat
 
@@ -15,5 +15,5 @@ python -m pip install --upgrade pip
 rem cd %origin_path%
 pip install -r requirements.txt
 
-@echo 'Python Virtual Environments succesfully installed and updated'
+@echo Python Virtual Environments succesfully installed and updated
 @pause
