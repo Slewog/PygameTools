@@ -2,6 +2,8 @@ from pyperclip import copy
 from sys import exit
 import pygame as pg
 
+
+
 GAP = 10
 SIZE_X = 40
 SIZE_Y = 35
@@ -12,7 +14,9 @@ screen_w = 0
 screen_h = 0
 screen_name = "Pygame Colors"
 
-pg.init()
+color_str_list = [color for color in pg.colordict.THECOLORS]
+color_amount = len(color_str_list) - 1
+color_list:list['Color'] = []
 
 
 class Color:
@@ -38,11 +42,7 @@ class Color:
         return False
 
 
-color_str_list = [color for color in pg.colordict.THECOLORS]
-color_amount = len(color_str_list) - 1
-color_list:list[Color] = []
-
-# Create all rects an calcule window size.
+# Create all colors and calcule window size.
 idx = 0
 for y in range(20):
     if idx <= color_amount:
@@ -58,7 +58,6 @@ for y in range(20):
         if screen_w == 0: screen_w += x_offset
 
         x_offset = GAP
-
 screen_h = y_offset
 
 screen = pg.display.set_mode((screen_w, screen_h))
