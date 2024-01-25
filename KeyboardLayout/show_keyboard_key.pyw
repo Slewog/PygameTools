@@ -51,7 +51,7 @@ def run_until_user_closes_window(
         ),
         Button(
             (center_x + 50, keyboard.rect.bottom + 35),
-            {'text': "QWERY", 'action': "change_layout", 'target_layout': "qwerty"}
+            {'text': "QWERTY", 'action': "change_layout", 'target_layout': "qwerty"}
         ),
     ]
 
@@ -75,6 +75,9 @@ def run_until_user_closes_window(
                 layout = kl.LayoutName.QWERTY if event.target_layout == "qwerty" else kl.LayoutName.AZERTY_LAPTOP
 
                 if keyboard.layout_name != layout:
+                    pg.display.set_caption(f"Keyboard Layout - {
+                        'QWERTY' if event.target_layout == 'qwerty' else 'AZERTY FR' 
+                    }")
                     keyboard = get_keyboard(layout, key_size, released_key_info)
 
                     y_offset = -6 if layout == kl.LayoutName.QWERTY else 6
@@ -119,7 +122,7 @@ def keyboard_example(layout_name: kl.LayoutName):
     screen = pg.display.set_mode(
         (keyboard.rect.width, keyboard.rect.height + 70))
     screen.fill(pg.Color('black'))
-    pg.display.set_caption('Keyboard Layout')
+    pg.display.set_caption('Keyboard Layout - QWERTY')
 
     keyboard.draw(screen)
     pg.display.update()
