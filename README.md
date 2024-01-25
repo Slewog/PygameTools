@@ -10,14 +10,11 @@ It's some tools i wrotted to make easier code sessions with pygame.
 - Open a window and display all pygame colors.
 - When a color is hovered the the windows title will show the color name.
 - Mouse click left on a color copy the color name into the clipboard.
-<p align="center" style="width:586px;height:288px;"><img src="screenshots/colors.png"></p>
+<p align="center" style="width:586px; height:288px;"><img src="screenshots/colors.png"></p>
 
 # Key board layout.
 - Show key pressed in two layouts: QWERTY / AZERTY LAPTOP
-
-<!-- <p align="center" style="display: inline;"><img src="screenshots/azerty_layout.png"><img src="screenshots/qwerty_layout.png"></p> -->
-
-<div style="display: flex; gap:20px;">
-    <img style="width:586px;height:288px;" src="screenshots/azerty_layout.png">
-    <img style="width:586px;height:288px;" src="screenshots/qwerty_layout.png">
+<div style="display: flex; flex-direction:column; gap:20px;">
+    <img style="width:586px; height:288px;" src="screenshots/azerty_layout.png">
+    <img style="width:586px; height:288px;" src="screenshots/qwerty_layout.png">
 </div>
