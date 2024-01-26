@@ -13,3 +13,4 @@ pip install -r requirements.txt
 
 @echo Python Virtual Environments succesfully installed and updated
 @pause
+call .\layout_venv\Scripts\deactivate.bat
