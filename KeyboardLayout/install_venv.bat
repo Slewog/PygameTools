@@ -10,7 +10,7 @@ call .\layout_venv\Scripts\activate.bat
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+call .\layout_venv\Scripts\deactivate.bat
 
 @echo Python Virtual Environments succesfully installed and updated
 @pause
-call .\layout_venv\Scripts\deactivate.bat
