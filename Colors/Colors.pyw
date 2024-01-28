@@ -3,6 +3,7 @@ from sys import exit
 import pygame as pg
 
 
+pg.init()
 
 GAP = 10
 SIZE_X = 40
